@@ -1,0 +1,47 @@
+/* Login dropdown styles */
+.login-dropdown {
+  position: relative;
+}
+
+.login-toggle {
+  cursor: pointer;
+  padding: 8px 12px;
+  display: block;
+}
+
+.login-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.login-menu.show {
+  display: block;
+}
+
+.login-menu a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.login-menu a:last-child {
+  border-bottom: none;
+}
+
+.login-menu a:hover {
+  background: #f8f9fa;
+}
+
+.login-dropdown:hover .login-menu {
+  display: block;
+}
